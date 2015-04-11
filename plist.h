@@ -16,8 +16,18 @@ namespace HB_SHR {
 
         public:
             PList();
+            //setter - has bug
+            int& operator [] (T in){
+                std::cout << "setter" << std::endl;
+                int a = 90;
+                return a;
+            }
+            //getter - has bug
+            int operator [] (T in) const {
+                std::cout << "getter" << std::endl;
+                return 1;
+            }
 
-            PList<T>& operator [] (T);
             PList<T>& operator = (char);
             PList<T>& operator = (const char *);
             PList<T>& operator = (char *);
