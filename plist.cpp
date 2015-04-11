@@ -31,7 +31,7 @@ namespace HB_SHR {
 
     template <typename T>
     int PList<T>::find(T){
-        it = new std::vector <T>::iterator();
+//        it = new std::vector < T >::iterator();
     }
 
     template <typename T>
